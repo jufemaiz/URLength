@@ -1,6 +1,5 @@
 // Global variables
 var pathname,base_json,bounds,stop = false;
-var MAXIMUM_URL_LENGTH = 2083;
 
 // jQuery
 $(document).ready(function(){
@@ -15,7 +14,7 @@ $(document).ready(function(){
 		}
   	}});
 	
-	pathname = document.URL;
+	pathname = document.URL.split('?',1)[0];
 	base_json = pathname + "json/?urlength=";
 	bounds = [base_json.length,MAXIMUM_URL_LENGTH];
 	$("#urlength span.maximum").html(MAXIMUM_URL_LENGTH);
@@ -29,10 +28,12 @@ function check_url(length) {
 		_json = _json + "1";
 	}
 	$.getJSON( _json, function(data) {
-		$('#urlength span.number').html(data[0].length + " (" + 100*data[0].length/MAXIMUM_URL_LENGTH + "%)");
+		$('#urlength span.number').html(data[0].length + " (" + Math.round(10000*data[0].length/MAXIMUM_URL_LENGTH)/100 + "%)");
 		var width = $('#urlength').innerWidth() * (data[0].url.length/MAXIMUM_URL_LENGTH) - 4
 		$('#urlength span.loading-bar').css({'width':width+'px'})
-		if( data[0].length != 2083) {
+		if (bounds[1] - bounds[0] <= 1) {
+			$('#urlength').addClass('finished').after('<p>This is the maximum URL Character Length and it is likely that you have an issue with the connectivity between the server and your browser.</p>');
+		} else if( data[0].length != 2083) {
 			bounds[0] = data[0].url.length;
 			check_url(bounds[0] + (bounds[1] - bounds[0])/2);
 		} else {

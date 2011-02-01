@@ -1,4 +1,11 @@
-<?php echo '<?xml version="1.0" encoding="UTF-8"?>'?>
+<?php
+	echo '<?xml version="1.0" encoding="UTF-8"?>';
+	$limit = 2083;
+	
+	if($_GET['limit'] != null) {
+		$limit = 1 * $_GET['limit'];
+	}
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
@@ -17,6 +24,10 @@
 			div#urlength span.loading-bar			{ position: absolute; z-index: -1; top: 2px; left: 2px; display: block; background: #ccccff; height: 36px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
 			
 		</style>
+
+		<script type="text/javascript" charset="utf-8">
+			var MAXIMUM_URL_LENGTH = <?php echo $limit; ?>;
+		</script>
 
 		<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/site.js"></script>
