@@ -80,6 +80,14 @@
 		<div id="footer">
 			<div class="container">
 				<p class="copyright"><a href="http://euphemize.net/">&copy; 2011 Joel Courtney</a>.</p>
+				<p>
+					Me elsewhere:
+					<a href="http://euphemize.net">blog</a>;
+					<a href="http://twitter.com/jufemaiz">@jufemaiz</a>;
+					<a href="http://flic.kr/jufemaiz">flic.kr</a>;
+					<a href="http://au.linkedin.com/in/joelcourtney">linkedin</a>; and
+					<a href="http://nemobs.com/">NEMObs</a>.
+				</p>
 			</div>
 		</div>
 	</body>
