@@ -44,22 +44,138 @@
 					<h2>Length</h2>
 					<div id="urlength"><span class="number">loading...</span> out of <span class="maximum">loading...</span> characters tested<span class="loading-bar"></span></div>
 					<h2>Findings</h2>
-					<dl>
-						<dt>Australia</dt>
-						<dd>Telstra - iPhone 3GS - mobile safari - no limit</dd>
-						<dd>3 (VodaHutch) - iPhone 3GS - mobile safari - no limit</dd>
-						<dd>3 (VodaHutch) - Blackberry Bold - native browser - no limit</dd>
-						<dd>? - ? - ? - 1937</dd>
-						<dt>Canada</dt>
-						<dd>Fido (Rogers) - iPhone 4G - mobile safari - no limit</dd>
-						<dd>Rogers - ? - tethered - no limit</dd>
-						<dd>Bell - "wireless router" - ? - 1999</dd>
-						<dd>Telus - iPhone - tehtered - 1999 (?)</dd>
-						<dt>USA</dt>
-						<dd>AT&amp;T - Microcell 3G - ? - no limit</dd>
-						<dd>AT&amp;T - iPhone 4G - mobile safari - no limit</dd>
-					</dl>
-					<h2>Flickr References</h2>
+					<table border="0" cellspacing="0" cellpadding="0">
+						<thead>
+							<tr>
+								<th>Nation</th>
+								<th>Telco</th>
+								<th>Device</th>
+								<th>Method</th>
+								<th>Character Limit</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Australia</th>
+								<th>Telstra</th>
+								<td>iPhone 3GS</td>
+								<td>mobile safari</td>
+								<td>no limit</td>
+							</tr>
+							<tr>
+								<th>Australia</th>
+								<th>Telstra</th>
+								<td>iPhone 3GS</td>
+								<td>Tethered</td>
+								<td>no limit</td>
+							</tr>
+							<tr>
+								<th>Australia</th>
+								<th>Telstra</th>
+								<td>iPhone 4G</td>
+								<td>mobile safari</td>
+								<td>no limit</td>
+							</tr>
+							<tr>
+								<th>Australia</th>
+								<th>Telstra</th>
+								<td>iPhone 4G</td>
+								<td>Tethered</td>
+								<td>no limit</td>
+							</tr>
+							<tr>
+								<th>Australia</th>
+								<th>Telstra</th>
+								<td>Bigpond Elite (Sierra) SW308 USB Wireless Card</td>
+								<td>USB connected</td>
+								<td>no limit</td>
+							</tr>
+							<tr>
+								<th>Australia</th>
+								<th>3/Vodafone/Hutchison</th>
+								<td>iPhone 3GS</td>
+								<td>Mobile safari</td>
+								<td>no limit</td>
+							</tr>
+							<tr>
+								<th>Australia</th>
+								<th>3/Vodafone/Hutchison</th>
+								<td>Blackberry Bold</td>
+								<td>Native browser</td>
+								<td>no limit</td>
+							</tr>
+							<tr>
+								<th>Australia</th>
+								<th>3/Vodafone/Hutchison</th>
+								<td>Samsung Android 2.2</td>
+								<td>Native browser</td>
+								<td>no limit</td>
+							</tr>
+							<tr>
+								<th>Australia</th>
+								<th>Optus</th>
+								<td>Nokia N85 running Symbian S60</td>
+								<td>Opera Mini 10.1</td>
+								<td>no limit</td>
+							</tr>
+							<tr>
+								<th>Australia</th>
+								<th>Unknown</th>
+								<td>Unknown</td>
+								<td>Unknown</td>
+								<td>1937</td>
+							</tr>
+							<tr>
+								<th>Canada</th>
+								<th>Fido (runs on Rogers network)</th>
+								<td>iPhone 4G</td>
+								<td>mobile safari</td>
+								<td>no limit</td>
+							</tr>
+							<tr>
+								<th>Canada</th>
+								<th>Rogers</th>
+								<td>Unknown</td>
+								<td>Tethered</td>
+								<td>no limit</td>
+							</tr>
+							<tr>
+								<th>Canada</th>
+								<th>Bell</th>
+								<td><a href="http://www.ericssonw35.com/">Ericsson W-35</a> "Turbo Hub"</td>
+								<td>Tethered through ethernet</td>
+								<td><strong>1999</strong></td>
+							</tr>
+							<tr>
+								<th>Canada</th>
+								<th>Telus</th>
+								<td>iPhone (Unknown model)</td>
+								<td>Tethered</td>
+								<td>1999</td>
+							</tr>
+							<tr>
+								<th>United Kingdom</th>
+								<th>O2</th>
+								<td>iPhone (unknown model)</td>
+								<td>mobile safari on GPRS network</td>
+								<td>no limit</td>
+							</tr>
+							<tr>
+								<th>United States of America</th>
+								<th>AT&amp;T</th>
+								<td>iPhone 4G</td>
+								<td>Mobile safari</td>
+								<td>no limit</td>
+							</tr>
+							<tr>
+								<th>United States of America</th>
+								<th>AT&amp;T</th>
+								<td>Microcell 3G</td>
+								<td>Unknown</td>
+								<td>no limit</td>
+							</tr>
+						</tbody>
+					</table>					<h2>Flickr References</h2>
 					<dl>
 						<dt>Help Forum</dt>
 						<dd><a href="http://www.flickr.com/help/forum/en-us/72157625915300616/">Can't view my own photos in lightbox or 'all sizes'.</a></dd>
@@ -90,5 +206,16 @@
 				</p>
 			</div>
 		</div>
+		<script type="text/javascript">
+		  	var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-113700-17']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
 	</body>
 </html>
